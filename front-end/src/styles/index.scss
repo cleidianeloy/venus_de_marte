@@ -1,0 +1,11 @@
+@import "./cores.scss";
+html, body{
+    padding: 0;
+    margin: 0;
+}
+section{
+    min-height: 100vh;
+}
+
+@import "./pages.scss"
+
