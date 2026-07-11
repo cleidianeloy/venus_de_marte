@@ -1,24 +1,30 @@
-
-import Footer from "./components/footer"
-import Header from "./components/header"
+import {
+  useRef
+} from 'react';
+import Header from "./components/Header"
+import About from "./pages/About"
+import Agenda from "./pages/Agenda"
 import Contact from "./pages/Contact"
-import Introdution from "./pages/Introdution"
-import UpcomingEvents from "./pages/UpcomingEvents"
-import Works from "./pages/Works"
+import Home from "./pages/Home"
+import Projects from "./pages/Projects"
+import useScrollProgress from './utils/progress';
 
 
 
 function App() {
-
-
+  // distância (em px) de scroll até a animação completar 100%
+// ajuste esse valor conforme o "ritmo" que quiser
+  const SCROLL_DISTANCE = 400;
+  const sectionRef = useRef<HTMLElement>(null);
+  const progress = useScrollProgress(sectionRef, SCROLL_DISTANCE);
   return (
-    <main className="gradient-principal">
-      <Header/>
-      <Introdution/>
-      <Works/>
-      <UpcomingEvents/>
+    <main ref={sectionRef}>
+      <Header progress={progress}/>
+      <Home/>
+      <About/>
+      <Projects/>
+      <Agenda/>
       <Contact/>
-''    <Footer/>
      {
       /* TODO: Continuar trabalhando na estrutura e estilização */
      }
