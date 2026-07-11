@@ -1,124 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&family=Inter:wght@400;500&family=Poppins:wght@400;700&family=Space+Grotesk:wght@700&display=swap');
-
-$font-epilogue: 'Epilogue', sans-serif;
-$font-poppins: 'Poppins', sans-serif;
-$font-inter: 'Inter', sans-serif;
-$font-space-grotesk: 'Space Grotesk', sans-serif;
-
-
-// --- EPILOGUE STYLES ---
-@mixin text-epilogue-40 {
-  font-family: $font-epilogue;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-}
-
-@mixin text-epilogue-28 {
-  font-family: $font-epilogue;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 36px;
-}
-
-@mixin text-epilogue-18 {
-  font-family: $font-epilogue;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 28px;
-}
-
-@mixin text-epilogue-12 {
-  font-family: $font-epilogue;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-}
-
-// --- POPPINS STYLES ---
-@mixin markdown-h2 { // Poppins, 30, 28px
-  font-family: $font-poppins;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 28px;
-}
-
-@mixin markdown-paragraph { // Poppins, 20, 30px
-  font-family: $font-poppins;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-}
-
-@mixin markdown-h3 { // Poppins, 20, 24px
-  font-family: $font-poppins;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-@mixin text-poppins-16 {
-  font-family: $font-poppins;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-@mixin text-poppins-12 {
-  font-family: $font-poppins;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-}
-
-// --- INTER STYLES ---
-@mixin text-inter-16-24 {
-  font-family: $font-inter;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-@mixin text-inter-16-auto {
-  font-family: $font-inter;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal; // AUTO no Figma vira normal no CSS
-}
-
-@mixin text-inter-16-26 {
-  font-family: $font-inter;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-}
-
-@mixin text-inter-12 {
-  font-family: $font-inter;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-}
-
-// --- SPACE GROTESK STYLES ---
-@mixin text-space-grotesk-16 {
-  font-family: $font-space-grotesk;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-@mixin text-space-grotesk-12-16 {
-  font-family: $font-space-grotesk;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-}
-
-@mixin text-space-grotesk-12-12 {
-  font-family: $font-space-grotesk;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 12px;
+p{
+    font-size: 22px;
+    text-decoration: none;
+    font-family: Quicksand;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0;
+    line-height: 26.4px;
+    color: $color-neutral-50;
 }
