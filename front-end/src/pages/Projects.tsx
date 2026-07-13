@@ -1,7 +1,6 @@
 import Project from "../components/Project"
-
+import { useState } from "react";
 export default function Projects() {
-    //TODO: falta estilizar 
     const projects = [
         {
             name: "Live Sections",
@@ -37,22 +36,38 @@ export default function Projects() {
             name: "Vênus de marte e a Tanatose",
             image: "https://res.cloudinary.com/qzrlaax1/image/upload/v1783722873/Adesivos_-_1_cglwdq.jpg",
             description: ["Um pouco sociedade dos poetas mortos, um pouco coletivo anarcopunk, a banda caótica e não binária Tanatose acrescenta um tempero swingado à lírica de Vênus",
-                    "Um pouco sociedade dos poetas mortos, um pouco coletivo anarcopunk, a banda caótica e não binária Tanatose acrescenta um tempero swingado à lírica de Vênus.",
                     "O show da banda traz um repertório visceral e contemporâneo, que mistura sonoridades do Rock, Rap, MPB e Manguebeat, para fazer dançar, vibrar e refletir.",
                     "Desde 2024 acompanhando Vênus, a Tanatose se apresentou em diversos eventos culturais públicos e privados"
             ]
     
         }
     ]
-
+const [openProject, setOpenProject] = useState("");
 return (
     <section id="projects" >
         <div className="container">
             <div className="row">
                 <div className="col col-12">
-                { projects.map((project)=>{
+                { projects.map((project, index)=>{
+                    const id:string = `project-${index}`
+                    const isCurrentProject = id === openProject;
+                    const openProjectAction = (): void => {
+                        if(!isCurrentProject){
+                            setOpenProject(id);
+                        }
+                    }
+                    const closeProject = (): void =>{
+                        setOpenProject("")
+                    }
                     return (
-                        <Project project={project}/>
+                            <Project
+                            key={id}
+                            project={project}
+                            isCurrentProject = {isCurrentProject}
+                            openProjectAction = {openProjectAction}
+                            closeProject = {closeProject}
+                         />
+
                     )
                 })}
                 </div>
