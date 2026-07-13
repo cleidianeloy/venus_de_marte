@@ -1,6 +1,4 @@
-import {
-  useRef
-} from 'react';
+import { useRef} from 'react';
 import Header from "./components/Header"
 import About from "./pages/About"
 import Agenda from "./pages/Agenda"
