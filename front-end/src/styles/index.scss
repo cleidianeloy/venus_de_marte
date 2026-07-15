@@ -6,8 +6,42 @@ html,
 body {
     padding: 0;
     margin: 0;
-}
 
+
+
+}
+*{
+    box-sizing: border-box;
+// 1. Padrão moderno (Firefox e navegadores modernos)
+    scrollbar-width: thin;
+    scrollbar-color: $color-rosa-100 transparent; /* Corrigido: adicionado 'transparent' como segundo valor */
+
+    // 2. Motores Webkit (Chrome, Safari, Edge, Opera)
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px; /* Opcional: define a altura se a rolagem for horizontal */
+    }
+
+    /* Track (Fundo) */
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 5px;
+    }
+
+    /* Thumb (Cursor) */
+    &::-webkit-scrollbar-thumb {
+        background: $color-rosa-100;
+        border-radius: 5px;
+        
+        /* Transição suave para o efeito de hover */
+        transition: background 0.2s ease; 
+    }
+
+    /* Thumb hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: darken($color-rosa-100, 15%); /* Dica: use uma variação da sua variável em vez de cinza escuro (#555) */
+    }
+}
 section {
     min-height: 100vh;
     display: flex;
@@ -22,15 +56,17 @@ main {
 }
 
 
-.wrapper{
+.wrapper {
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    img{
+
+    img {
         max-width: 80%;
     }
 }
+
 @import "./menu.scss";
 @import "./pages.scss";

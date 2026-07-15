@@ -71,6 +71,7 @@
             transition:
                 --color-1 0.5s ease-in-out,
                 --color-2 0.5s ease-in-out;
+
             .image-title {
                 display: flex;
                 flex-direction: column;
@@ -114,10 +115,12 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding: 40px;
+
+                padding: 0;
                 opacity: 0;
                 width: 0;
                 height: 0;
+
                 p {
                     font-size: 22px;
                     text-decoration: none;
@@ -134,16 +137,20 @@
                 display: none;
             }
 
-            &.open {
+            &.open,
+            &:hover {
                 --color-1: rgba(80, 0, 19, 0.8);
-                --color-2: rgba(0, 0, 0,0.8);
+                --color-2: rgba(0, 0, 0, 0.8);
+            }
 
+            &.open {
                 .content {
                     width: 556px;
                     height: auto;
                     opacity: 1;
+                    padding: 40px;
                 }
-                    
+
                 .close {
                     background-color: black;
                     display: flex;
@@ -173,10 +180,102 @@
 }
 
 #agenda {
-    background-image: url(https://res.cloudinary.com/qzrlaax1/image/upload/v1783760731/20250405_185200_z2u3ez.jpg);
-    background-position: left;
-    background-size: 50% auto;
+    background-image: linear-gradient(90deg, transparent 0, black 45%), url(https://res.cloudinary.com/qzrlaax1/image/upload/v1783760731/20250405_185200_z2u3ez.jpg);
+    background-position: center, left;
+    background-size: contain, 50% auto;
     background-repeat: no-repeat;
+    background-color: #000000;
+
+
+
+    .row {
+        justify-content: flex-end;
+
+        .col {
+            max-height: 100vh;
+            overflow-y: auto;
+
+            .event-container {
+                display: flex;
+                flex-direction: row;
+                margin-block: 20px;
+
+                .informations {
+                    time {
+                        display: grid;
+                        grid-template-areas: "day month " "day name";
+                        width: fit-content;
+                        justify-items: start;
+                        GAP: 0 10px;
+                        align-items: last baseline;
+                    }
+
+                    .day {
+                        font-size: 64px;
+                        text-decoration: none;
+                        font-family: Quicksand;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: 0;
+                        line-height: 76.8px;
+                        grid-area: day;
+                    }
+
+                    .month {
+                        font-size: 24px;
+                        text-decoration: none;
+                        font-family: Quicksand;
+                        font-weight: 700;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: 0;
+                        line-height: 28.8px;
+                        grid-area: month;
+                        text-transform: uppercase;
+                    }
+
+                    .event-name {
+                        font-size: 22px;
+                        text-decoration: none;
+                        font-family: Quicksand;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: 0;
+                        line-height: 28.8px;
+                        grid-area: name;
+                    }
+                }
+
+                .learn-more {
+                    align-self: center;
+
+                    a {
+                        font-size: 20px;
+                        text-decoration: none;
+                        font-family: Quicksand;
+                        font-weight: 600;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: 0;
+                        line-height: 20px;
+                        width: max-content;
+                        display: block;
+                        border: 3px solid $color-rosa-100;
+                        padding: 12px;
+                        border-radius: 8px;
+                    }
+                }
+
+                .description {
+                    font-weight: 200;
+                    padding: 10px 20px 10px 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
 }
 
 #contact {
@@ -184,4 +283,123 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    .col {
+        &:nth-of-type(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .contact-container {
+            background-color: black;
+            padding: 30px;
+            border: 3px solid $color-rosa-100;
+
+            .social-media {
+                display: flex;
+                list-style: none;
+                gap: 30px;
+                justify-content: center;
+                padding: 0;
+                margin-block: 20px;
+
+                svg {
+                    height: 30px;
+                    width: auto;
+
+                    * {
+                        color: $color-rosa-100;
+                    }
+
+                }
+
+            }
+
+
+
+            form {
+                display: grid;
+                grid-template-areas: "name email" "message message " "submit submit";
+                gap: 10px;
+
+                .name {
+                    grid-area: name;
+                }
+
+                .email {
+                    grid-area: email;
+                }
+
+                .message {
+                    grid-area: message;
+                }
+
+                .submit {
+                    grid-area: submit;
+                    justify-self: center;
+                }
+
+                .input-container {
+                    max-width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+
+                label {
+                    font-size: 20px;
+                    text-decoration: none;
+                    font-family: Quicksand;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    color: $color-rosa-100;
+                }
+
+                input,
+                textarea {
+                    font-size: 20px;
+                    text-decoration: none;
+                    font-family: Quicksand;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0;
+                    line-height: 24px;
+                    width: 100%;
+                    background-color: transparent;
+                    color: #f2446f;
+                    border: 1px solid #f2446f;
+                    padding: 10px;
+
+                    &::placeholder {
+                        text-transform: capitalize;
+                        color: #f2446f;
+                    }
+                }
+
+                button {
+                    font-size: 20px;
+                    text-decoration: none;
+                    font-family: Quicksand;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0;
+                    line-height: 20px;
+                    background-color: transparent;
+                    border: 1px solid;
+                    padding: 12px;
+                    border-radius: 8px;
+                    color: #f2446f;
+                    text-transform: uppercase;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
 }
