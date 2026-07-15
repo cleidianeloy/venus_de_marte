@@ -3,12 +3,12 @@ export default function About() {
         <section id="about" >
             <div className="container">
                 <div className="row">
-                    <div className="col col-md-6">
+                    <div className="col col-12 col-md-6">
                         <div className="wrapper">
                             <img src="https://res.cloudinary.com/qzrlaax1/image/upload/v1783736893/3_l8vyso.jpg" alt="" />
                         </div>
                     </div>
-                    <div className="col col-md-6">
+                    <div className="col col-12 col-md-6">
                         <h2>{"+ DIVA POP DO UNDERGROUND >"}</h2>
                         <p>
                             Vênus de Marte é uma artista multimídia, performer e ícone do pop/punk underground. Sua arte transmídia explode em música, performance ao vivo e poesia, desafiando normas e celebrando a estética queer.
