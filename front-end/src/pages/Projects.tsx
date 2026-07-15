@@ -1,6 +1,7 @@
 import Project from "../components/Project"
 import { useState } from "react";
 export default function Projects() {
+    //TODO: voltar pra ajustar o scroll
     const projects = [
         {
             name: "Live Sections",
