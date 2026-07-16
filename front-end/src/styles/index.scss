@@ -18,8 +18,8 @@ body {
 
     // 2. Motores Webkit (Chrome, Safari, Edge, Opera)
     &::-webkit-scrollbar {
-        width: 10px;
-        height: 10px; /* Opcional: define a altura se a rolagem for horizontal */
+        width: 1rem;
+        height: 1rem; /* Opcional: define a altura se a rolagem for horizontal */
     }
 
     /* Track (Fundo) */
@@ -47,7 +47,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-block: 50px;
+    padding-block: 5rem;
 }
 
 main {

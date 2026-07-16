@@ -10,18 +10,18 @@ export default function Contact() {
                             <ul className="social-media">
                                 <li>
                                     <a href="https://www.tiktok.com/@venusdemartemusic">
-                                        <FontAwesomeIcon icon={faTiktok} />
+                                        <FontAwesomeIcon icon={faTiktok}  aria-label='Tiktok'/>
                                     </a>
                                  
                                 </li>
                                 <li>
                                     <a href="https://www.instagram.com/venusdemartemusic/">
-                                        <FontAwesomeIcon icon={faInstagram} />
+                                        <FontAwesomeIcon icon={faInstagram} aria-label='Instagram'/>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://whatsa.me/5548991653210/?t=Olá gostaria de saber mais sobre seu trabalho">
-                                        <FontAwesomeIcon icon={faWhatsapp} />
+                                        <FontAwesomeIcon icon={faWhatsapp} aria-label='Whatsapp' />
                                     </a>
                                 </li>
                             </ul>

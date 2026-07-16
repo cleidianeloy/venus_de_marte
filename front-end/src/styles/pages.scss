@@ -17,20 +17,20 @@
 
 #about {
     background-image: linear-gradient(180deg, #000000 86%, #500013 100%);
-
+    padding: 50rem;
     img {
-        min-width: 400px;
+        min-width: 400rem;
     }
 
     h2 {
-        font-size: 50px;
+        font-size: 50rem;
         text-decoration: none;
         font-family: Poppins;
         font-weight: 700;
         font-style: normal;
         font-stretch: normal;
         letter-spacing: 0;
-        line-height: 50px;
+        line-height: 50rem;
         color: $color-neutral-50;
     }
 }
@@ -77,11 +77,11 @@
                 flex-direction: column;
                 width: fit-content;
                 align-items: center;
-                padding: 40px;
-                gap: 20px;
+                padding: 40rem;
+                gap: 20rem;
 
                 .wrapper {
-                    width: 350px;
+                    width: 350rem;
 
                     img {
                         min-width: 100%;
@@ -96,14 +96,14 @@
                 }
 
                 h3 {
-                    font-size: 30px;
+                    font-size: 30rem;
                     text-decoration: none;
                     font-family: Quicksand;
                     font-weight: 700;
                     font-style: normal;
                     font-stretch: normal;
                     letter-spacing: 0;
-                    line-height: 36px;
+                    line-height: 36rem;
                     text-transform: uppercase;
                     margin: 0;
                     text-align: center;
@@ -122,14 +122,14 @@
                 height: 0;
 
                 p {
-                    font-size: 22px;
+                    font-size: 22rem;
                     text-decoration: none;
                     font-family: Quicksand;
                     font-weight: 300;
                     font-style: normal;
                     font-stretch: normal;
                     letter-spacing: 0;
-                    line-height: 26.4px;
+                    line-height: 26.4rem;
                 }
             }
 
@@ -145,10 +145,10 @@
 
             &.open {
                 .content {
-                    width: 556px;
+                    width: 556rem;
                     height: auto;
                     opacity: 1;
-                    padding: 40px;
+                    padding: 40rem;
                 }
 
                 .close {
@@ -159,16 +159,16 @@
                     height: fit-content;
                     position: absolute;
                     border: none;
-                    padding: 8px 8px;
-                    right: 8px;
-                    top: 8px;
-                    gap: 8px;
-                    border: 3px solid $color-rosa-80;
-                    border-radius: 8px;
+                    padding: 8rem 8rem;
+                    right: 8rem;
+                    top: 8rem;
+                    gap: 8rem;
+                    border: 3rem solid $color-rosa-80;
+                    border-radius: 8rem;
 
                     svg {
-                        width: 16px;
-                        height: 16px;
+                        width: 16rem;
+                        height: 16rem;
                     }
                 }
             }
@@ -198,7 +198,7 @@
             .event-container {
                 display: flex;
                 flex-direction: row;
-                margin-block: 20px;
+                margin-block: 20rem;
 
                 .informations {
                     time {
@@ -206,44 +206,44 @@
                         grid-template-areas: "day month " "day name";
                         width: fit-content;
                         justify-items: start;
-                        GAP: 0 10px;
+                        gap: 0 10rem;
                         align-items: last baseline;
                     }
 
                     .day {
-                        font-size: 64px;
+                        font-size: 64rem;
                         text-decoration: none;
                         font-family: Quicksand;
                         font-weight: 500;
                         font-style: normal;
                         font-stretch: normal;
                         letter-spacing: 0;
-                        line-height: 76.8px;
+                        line-height: 76.8rem;
                         grid-area: day;
                     }
 
                     .month {
-                        font-size: 24px;
+                        font-size: 24rem;
                         text-decoration: none;
                         font-family: Quicksand;
                         font-weight: 700;
                         font-style: normal;
                         font-stretch: normal;
                         letter-spacing: 0;
-                        line-height: 28.8px;
+                        line-height: 28.8rem;
                         grid-area: month;
                         text-transform: uppercase;
                     }
 
                     .event-name {
-                        font-size: 22px;
+                        font-size: 22rem;
                         text-decoration: none;
                         font-family: Quicksand;
                         font-weight: 500;
                         font-style: normal;
                         font-stretch: normal;
                         letter-spacing: 0;
-                        line-height: 28.8px;
+                        line-height: 28.8rem;
                         grid-area: name;
                     }
                 }
@@ -252,25 +252,25 @@
                     align-self: center;
 
                     a {
-                        font-size: 20px;
+                        font-size: 20rem;
                         text-decoration: none;
                         font-family: Quicksand;
                         font-weight: 600;
                         font-style: normal;
                         font-stretch: normal;
                         letter-spacing: 0;
-                        line-height: 20px;
+                        line-height: 20rem;
                         width: max-content;
                         display: block;
-                        border: 3px solid $color-rosa-100;
-                        padding: 12px;
-                        border-radius: 8px;
+                        border: 3rem solid $color-rosa-100;
+                        padding: 12rem;
+                        border-radius: 8rem;
                     }
                 }
 
                 .description {
                     font-weight: 200;
-                    padding: 10px 20px 10px 0;
+                    padding: 10rem 20rem 10rem 0;
                     margin: 0;
                 }
             }
@@ -285,6 +285,7 @@
     background-repeat: no-repeat;
 
     .col {
+        padding: 20px;
         &:nth-of-type(2) {
             display: flex;
             flex-direction: column;
@@ -293,19 +294,19 @@
 
         .contact-container {
             background-color: black;
-            padding: 30px;
-            border: 3px solid $color-rosa-100;
+            padding: 30rem;
+            border: 3rem solid $color-rosa-100;
 
             .social-media {
                 display: flex;
                 list-style: none;
-                gap: 30px;
+                gap: 30rem;
                 justify-content: center;
                 padding: 0;
-                margin-block: 20px;
+                margin-block: 20rem;
 
                 svg {
-                    height: 30px;
+                    height: 30rem;
                     width: auto;
 
                     * {
@@ -321,7 +322,7 @@
             form {
                 display: grid;
                 grid-template-areas: "name email" "message message " "submit submit";
-                gap: 10px;
+                gap: 10rem;
 
                 .name {
                     grid-area: name;
@@ -344,37 +345,37 @@
                     max-width: 100%;
                     display: flex;
                     flex-direction: column;
-                    gap: 10px;
+                    gap: 10rem;
                 }
 
                 label {
-                    font-size: 20px;
+                    font-size: 20rem;
                     text-decoration: none;
                     font-family: Quicksand;
                     font-weight: 700;
                     font-style: normal;
                     font-stretch: normal;
                     letter-spacing: 0;
-                    line-height: 24px;
+                    line-height: 24rem;
                     text-transform: uppercase;
                     color: $color-rosa-100;
                 }
 
                 input,
                 textarea {
-                    font-size: 20px;
+                    font-size: 20rem;
                     text-decoration: none;
                     font-family: Quicksand;
                     font-weight: 300;
                     font-style: normal;
                     font-stretch: normal;
                     letter-spacing: 0;
-                    line-height: 24px;
+                    line-height: 24rem;
                     width: 100%;
                     background-color: transparent;
                     color: #f2446f;
-                    border: 1px solid #f2446f;
-                    padding: 10px;
+                    border: 1rem solid #f2446f;
+                    padding: 10rem;
 
                     &::placeholder {
                         text-transform: capitalize;
@@ -383,21 +384,21 @@
                 }
 
                 button {
-                    font-size: 20px;
+                    font-size: 20rem;
                     text-decoration: none;
                     font-family: Quicksand;
                     font-weight: 700;
                     font-style: normal;
                     font-stretch: normal;
                     letter-spacing: 0;
-                    line-height: 20px;
+                    line-height: 20rem;
                     background-color: transparent;
-                    border: 1px solid;
-                    padding: 12px;
-                    border-radius: 8px;
+                    border: 1rem solid;
+                    padding: 12rem;
+                    border-radius: 8rem;
                     color: #f2446f;
                     text-transform: uppercase;
-                    margin-top: 20px;
+                    margin-top: 20rem;
                 }
             }
         }
