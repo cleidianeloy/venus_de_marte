@@ -69,6 +69,13 @@
         overflow-x: auto;
         overflow-y: hidden;
         min-height: 100vh;
+        cursor: grab;
+
+        &.grabbing {
+            cursor: grabbing;
+            user-select: none;
+            -webkit-overflow-scrolling: touch;
+        }
 
         .project {
             display: flex;
@@ -88,6 +95,7 @@
                 align-items: center;
                 padding: 40rem;
                 gap: 20rem;
+                cursor: pointer;
 
                 .wrapper {
                     width: 350rem;
@@ -97,6 +105,8 @@
                         aspect-ratio: 1 / 1;
                         object-fit: cover;
                         object-position: center;
+                        pointer-events: none;
+                        user-drag: none;
 
                         &[src*="IMG_3200_ubo9ae.jpg"] {
                             object-position: top;
@@ -157,7 +167,11 @@
                     width: 500rem;
                     height: auto;
                     opacity: 1;
+                    max-height: 420rem;
                     padding: 40rem;
+                    overflow: auto;
+                    justify-content: flex-start;
+                    margin: auto;
                 }
 
                 .close {
@@ -219,7 +233,7 @@
             .event-container {
                 display: flex;
                 flex-direction: row;
-                margin-block: 20rem;
+                margin: 20rem 40rem;
 
                 .informations {
                     time {
@@ -302,14 +316,6 @@
         background-image: linear-gradient(180deg, transparent 0, black 45%), url(https://res.cloudinary.com/qzrlaax1/image/upload/v1783760731/20250405_185200_z2u3ez.jpg);
         background-position: center, bottom;
         background-size: contain, 100% auto;
-
-        .row {
-            .col {
-                .event-container {
-                    margin-inline: 40rem;
-                }
-            }
-        }
     }
 }
 

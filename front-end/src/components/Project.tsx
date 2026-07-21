@@ -20,7 +20,7 @@ export default function Project({
         <div  className={`project ${isCurrentProject ? 'open' : ''}`} onClick={openProjectAction}>
             <div className="image-title">
                 <div className="wrapper">
-                    <img src={image} alt="" />
+                    <img src={image} draggable="false" alt="" />
                 </div>
                 <h3>{name}</h3>
             </div>
