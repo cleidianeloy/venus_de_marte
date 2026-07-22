@@ -22,7 +22,7 @@ export default function Agenda() {
             return eventDate >= today;
     }) || []; 
     return (
-        <section id="agenda" >
+        <section id="agenda" data-name="Agenda">
             <div className="container">
                 <div className="row">
                     <div className="col col-md-6">

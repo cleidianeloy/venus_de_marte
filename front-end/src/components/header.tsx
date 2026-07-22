@@ -6,13 +6,17 @@ import {
     useState,
     type CSSProperties,
 } from 'react';
-
+import type { SectionInfo } from '../App';
 
 // permite custom properties (--foo) no style do React
 type CSSVarProperties = CSSProperties & Record<`--${string}`, string>;
 
-
-export default function Header(props: { progress: number }) {
+interface Props {
+    progress: number,
+    activeSection: string,
+    sections: SectionInfo[] | []
+}
+export default function Header({ progress, activeSection, sections }: Props) {
     const [isOpen, setIsOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
 
@@ -32,7 +36,6 @@ export default function Header(props: { progress: number }) {
         setIsOpen(!isOpen);
     };
 
-    const { progress } = props;
 
     const styleVars: CSSVarProperties = useMemo(() => {
         return {
@@ -58,29 +61,24 @@ export default function Header(props: { progress: number }) {
                     aria-label={isMobile ? (isOpen ? "Fechar menu de navegação" : "Abrir menu de navegação") : undefined}>
                     <FontAwesomeIcon icon={isOpen ? faXmark : faBars} aria-hidden="true" />
                 </button>
-                <ul id="main-menu"
+                <ul
+                    id="main-menu"
                     className={`nav-links ${isOpen && isMobile ? 'is-open' : ''}`}
-                    aria-hidden={isMobile ? !isOpen : undefined}>
-                    <li>
-                        <a href="#about">
-                            Sobre
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#projects">
-                            Projetos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#agenda">
-                            Agenda
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact">
-                            Contato
-                        </a>
-                    </li>
+                    aria-hidden={isMobile ? !isOpen : undefined}
+                >
+                    {sections
+                        .filter((section) => section.name.trim() !== '') // Filtra apenas seções com data-name preenchido
+                        .map((section) => (
+                            <li key={section.id}>
+                                <a
+                                    href={`#${section.id}`}
+                                    className={activeSection === section.id ? "selected" : ""}
+                                >
+                                    {section.name}
+                                </a>
+                            </li>
+                        ))
+                    }
                 </ul>
             </nav>
 

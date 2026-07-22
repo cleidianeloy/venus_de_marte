@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTiktok, faInstagram, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 export default function Contact() {
     return (
-        <section id="contact" >
+        <section id="contact" data-name="Contato">
             <div className="container">
                 <div className="row">
                     <div className="col col-12 col-md-6">

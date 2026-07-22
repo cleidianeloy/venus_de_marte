@@ -86,7 +86,7 @@ export default function Projects() {
     const [openProject, setOpenProject] = useState("");
 
     return (
-        <section id="projects">
+        <section id="projects" data-name="Projetos">
             <div className="container">
                 <div className="row">
                     <div 
