@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://venus-de-marte.onrender.com/

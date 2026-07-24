@@ -46,7 +46,7 @@
     h2 {
         font-size: 50rem;
         text-decoration: none;
-        font-family: Poppins;
+        font-family: Poppins, sans-serif;
         font-weight: 700;
         font-style: normal;
         font-stretch: normal;
@@ -76,7 +76,7 @@
 }
 
 #projects {
-    background-image: url("https://res.cloudinary.com/qzrlaax1/image/upload/v1783760697/Projetos_kpxsk5.jpg");
+    background-image: url("https://res.cloudinary.com/qzrlaax1/image/upload/f_auto,q_auto,w_1500/v1783760697/Projetos_kpxsk5.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -137,7 +137,7 @@
                 h3 {
                     font-size: 30rem;
                     text-decoration: none;
-                    font-family: Quicksand;
+                    font-family: Quicksand, sans-serif;
                     font-weight: 700;
                     font-style: normal;
                     font-stretch: normal;
@@ -163,7 +163,7 @@
                 p {
                     font-size: 22rem;
                     text-decoration: none;
-                    font-family: Quicksand;
+                    font-family: Quicksand, sans-serif;
                     font-weight: 300;
                     font-style: normal;
                     font-stretch: normal;
@@ -235,7 +235,7 @@
 }
 
 #agenda {
-    background-image: linear-gradient(90deg, transparent 0, black 45%), url(https://res.cloudinary.com/qzrlaax1/image/upload/v1783760731/20250405_185200_z2u3ez.jpg);
+    background-image: linear-gradient(90deg, transparent 0, black 45%), url(https://res.cloudinary.com/qzrlaax1/image/upload/f_auto,q_auto,w_1500/v1783760731/20250405_185200_z2u3ez.jpg);
     background-position: center, left;
     background-size: contain, 50% auto;
     background-repeat: no-repeat;
@@ -268,7 +268,7 @@
                     .day {
                         font-size: 64rem;
                         text-decoration: none;
-                        font-family: Quicksand;
+                        font-family: Quicksand, sans-serif;
                         font-weight: 500;
                         font-style: normal;
                         font-stretch: normal;
@@ -280,7 +280,7 @@
                     .month {
                         font-size: 24rem;
                         text-decoration: none;
-                        font-family: Quicksand;
+                        font-family: Quicksand, sans-serif;
                         font-weight: 700;
                         font-style: normal;
                         font-stretch: normal;
@@ -293,7 +293,7 @@
                     .event-name {
                         font-size: 22rem;
                         text-decoration: none;
-                        font-family: Quicksand;
+                        font-family: Quicksand, sans-serif;
                         font-weight: 500;
                         font-style: normal;
                         font-stretch: normal;
@@ -309,7 +309,7 @@
                     a {
                         font-size: 20rem;
                         text-decoration: none;
-                        font-family: Quicksand;
+                        font-family: Quicksand, sans-serif;
                         font-weight: 600;
                         font-style: normal;
                         font-stretch: normal;
@@ -333,14 +333,14 @@
     }
 
     @media (max-width: 768px) {
-        background-image: linear-gradient(180deg, transparent 0, black 45%), url(https://res.cloudinary.com/qzrlaax1/image/upload/v1783760731/20250405_185200_z2u3ez.jpg);
+        background-image: linear-gradient(180deg, transparent 0, black 45%), url(https://res.cloudinary.com/qzrlaax1/image/upload/f_auto,q_auto,w_1500/v1783760731/20250405_185200_z2u3ez.jpg);
         background-position: center, bottom;
         background-size: contain, 100% auto;
     }
 }
 
 #contact {
-    background-image: url("https://res.cloudinary.com/qzrlaax1/image/upload/v1783760697/Contato_rbp3d1.jpg");
+    background-image: url("https://res.cloudinary.com/qzrlaax1/image/upload/f_auto,q_auto,w_1500/v1783760697/Contato_rbp3d1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -414,7 +414,7 @@
                 label {
                     font-size: 20rem;
                     text-decoration: none;
-                    font-family: Quicksand;
+                    font-family: Quicksand, sans-serif;
                     font-weight: 700;
                     font-style: normal;
                     font-stretch: normal;
@@ -428,7 +428,7 @@
                 textarea {
                     font-size: 20rem;
                     text-decoration: none;
-                    font-family: Quicksand;
+                    font-family: Quicksand, sans-serif;
                     font-weight: 300;
                     font-style: normal;
                     font-stretch: normal;
@@ -449,7 +449,7 @@
                 button {
                     font-size: 20rem;
                     text-decoration: none;
-                    font-family: Quicksand;
+                    font-family: Quicksand, sans-serif;
                     font-weight: 700;
                     font-style: normal;
                     font-stretch: normal;

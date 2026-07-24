@@ -41,7 +41,7 @@ export default function Projects() {
     const projects = [
         {
             name: "Live Sections",
-            image: "https://res.cloudinary.com/qzrlaax1/image/upload/v1783722872/14_De_Novembro_-_2_dx9bzh.jpg",
+            image: "https://res.cloudinary.com/qzrlaax1/image/upload/f_auto,q_auto,w_400/v1783722872/14_De_Novembro_-_2_dx9bzh.jpg",
             description: [
                 "Representando a vertente musical do projeto, o EP “Rockstar Live Sections”, com 6 faixas originais, registra a performance ao vivo da banda em estúdio.",
                 "Após a publicação de dois singles, o projeto está em processo de finalização com previsão de lançamento da obra completa em junho de 2026"
@@ -49,7 +49,7 @@ export default function Projects() {
         },
         {
             name: "Poesia SLAM",
-            image: "https://res.cloudinary.com/qzrlaax1/image/upload/v1783722876/IMG_3200_ubo9ae.jpg",
+            image: "https://res.cloudinary.com/qzrlaax1/image/upload/f_auto,q_auto,w_400/v1783722876/IMG_3200_ubo9ae.jpg",
             description: [
                 "Uma parcela dos poemas registrados no livro foram escritos e apresentados na cena das batalhas de poesia Slam em Santa Catarina durante os anos de 2023 a 2025.",
                 "Com temas de estética, sobrevivência, amor e fracasso queer na arte periférica, Vênus marcou presença no Slam estadual nos anos de 2024 e 2025.",
@@ -58,7 +58,7 @@ export default function Projects() {
         },
         {
             name: "ROCKSTAR",
-            image: "https://res.cloudinary.com/qzrlaax1/image/upload/v1783722874/Adesivos_-_3_c0ctfr.jpg",
+            image: "https://res.cloudinary.com/qzrlaax1/image/upload/f_auto,q_auto,w_400/v1783722874/Adesivos_-_3_c0ctfr.jpg",
             description: [
                 "Formada em Produção Multimídia pelo IFSC em 2025, apresentou como conclusão de curso uma pesquisa de prática artístisca sobre as interseções entre o conceito de transmídia (Jenkins) e a arte queer (Preciado/Butler).",
                 " O resultado é uma tríade de obras artísticas que se complementam narrativamente: um filme de curta metragem, um livro de poemas e um EP no formato Live Sessions."
@@ -66,7 +66,7 @@ export default function Projects() {
         },
         {
             name: "Literatura Marginal",
-            image: "https://res.cloudinary.com/qzrlaax1/image/upload/v1783722872/PNG_-_Rockstar_Zine_-_1_r5mbpx.png",
+            image: "https://res.cloudinary.com/qzrlaax1/image/upload/f_auto,q_auto,w_400/v1783722872/PNG_-_Rockstar_Zine_-_1_r5mbpx.png",
             description: [
                 "A vertente literária do projeto é um livro de poemas ilustrado, e representa as confissões íntimas de uma artista “fracassada”.",
                 "Com um estilo zine/revista traz um vocabulário pop com sessões especiais como um “tutorial para poetas” e uma “entrevista com a alma de Kurt Cobain”.Com humor e sensibilidade revela a farsa por trás da idolatria de ícones da industria cultural.O livro ainda está em processo de edição e sem data oficial para lançamento."
@@ -74,7 +74,7 @@ export default function Projects() {
         },
         {
             name: "Vênus de marte e a Tanatose",
-            image: "https://res.cloudinary.com/qzrlaax1/image/upload/v1783722873/Adesivos_-_1_cglwdq.jpg",
+            image: "https://res.cloudinary.com/qzrlaax1/image/upload/f_auto,q_auto,w_400/v1783722873/Adesivos_-_1_cglwdq.jpg",
             description: [
                 "Um pouco sociedade dos poetas mortos, um pouco coletivo anarcopunk, a banda caótica e não binária Tanatose acrescenta um tempero swingado à lírica de Vênus",
                 "O show da banda traz um repertório visceral e contemporâneo, que mistura sonoridades do Rock, Rap, MPB e Manguebeat, para fazer dançar, vibrar e refletir.",

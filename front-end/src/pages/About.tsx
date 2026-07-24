@@ -5,7 +5,7 @@ export default function About() {
                 <div className="row">
                     <div className="col col-12 col-md-6">
                         <div className="wrapper">
-                            <img src="https://res.cloudinary.com/qzrlaax1/image/upload/v1783736893/3_l8vyso.jpg" alt="" />
+                            <img src="https://res.cloudinary.com/qzrlaax1/image/upload/f_auto,q_auto,w_500/v1783736893/3_l8vyso.jpg" alt="" />
                         </div>
                     </div>
                     <div className="col col-12 col-md-6">

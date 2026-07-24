@@ -47,7 +47,7 @@ export default function Header({ progress, activeSection, sections }: Props) {
         <header id="menu" style={styleVars}>
             <h1>
                 <a href="#home">
-                    <img src="https://res.cloudinary.com/qzrlaax1/image/upload/v1783724257/venus_de_marte_o4qlaa.svg" alt="Vênus de Marte" />
+                    <img src="https://res.cloudinary.com/qzrlaax1/image/upload/f_auto,q_auto,w_400/v1783724257/venus_de_marte_o4qlaa.svg" alt="Vênus de Marte" fetchPriority="high"/>
                     <i>{"-||- 0 >>"}</i>
                 </a>
             </h1>
