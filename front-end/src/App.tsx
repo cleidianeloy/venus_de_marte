@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from "react";
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 import About from "./pages/About";
 import Agenda from "./pages/Agenda";
 import Contact from "./pages/Contact";

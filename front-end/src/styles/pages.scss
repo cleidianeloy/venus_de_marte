@@ -2,26 +2,27 @@
     background-image: linear-gradient(180deg, #000000 0%, #500013 100%);
     position: relative;
     /* Ajuste a altura de acordo com o seu projeto */
-    min-height: 100vh; 
+    min-height: 100vh;
     overflow: hidden;
 
     .bg-layer {
         position: absolute;
-        inset: 0; /* Isso substitui width: 100%, height: 100%, top: 0 e left: 0 de uma vez! */
+        inset: 0;
+        /* Isso substitui width: 100%, height: 100%, top: 0 e left: 0 de uma vez! */
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        
+
         /* Começa invisível */
-        opacity: 0; 
-        
+        opacity: 0;
+
         /* Uma transição mais longa (1.2s) deixa a entrada muito elegante */
-        transition: opacity 1.2s ease-in-out; 
+        transition: opacity 1.2s ease-in-out;
         z-index: 1;
 
         &.active {
             /* Fica com a opacidade que você pediu quando ativa */
-            opacity: 0.4; 
+            opacity: 0.4;
             z-index: 2;
         }
     }
@@ -29,7 +30,7 @@
     /* Precisamos garantir que o conteúdo fique por cima das imagens de fundo */
     .home-content {
         position: relative;
-        z-index: 10; 
+        z-index: 10;
         width: 100%;
         height: 100%;
     }
@@ -368,15 +369,15 @@
                 padding: 0;
                 margin-block: 20rem;
 
-                svg {
-                    height: 30rem;
-                    width: auto;
+                i {
+                    width: fit-content;
 
-                    * {
+                    &:before {
+                        font-size: 30rem;
                         color: $color-rosa-100;
                     }
-
                 }
+
 
             }
 

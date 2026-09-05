@@ -1,4 +1,4 @@
-import Project from "../components/Project"
+import Project from "../components/projects/Project"
 import React, { useRef, useState } from "react";
 
 export default function Projects() {

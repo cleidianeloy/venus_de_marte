@@ -1,4 +1,4 @@
-import type { EventInterface } from "../pages/Agenda";
+import type { EventInterface } from "../../pages/Agenda";
 
 interface Props {
     currentEvent: EventInterface;

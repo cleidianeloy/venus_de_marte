@@ -1,9 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTiktok, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import React, { Suspense, useState, useEffect } from 'react';
-
-const SpotifyPlayer = React.lazy(() => import('../components/SpotifyPlayer'));
-const YouTubePlayer = React.lazy(() => import('../components/YouTubePlayer'));
+import {ContactForm} from '../components/contact/ContactForm';
+import {SocialMedia} from '../components/contact/SocialMedia';
+const SpotifyPlayer = React.lazy(() => import('../components/contact/SpotifyPlayer'));
+const YouTubePlayer = React.lazy(() => import('../components/contact/YouTubePlayer'));
 
 export default function Contact() {
   const [loadEmbeds, setLoadEmbeds] = useState(false);
@@ -32,40 +31,8 @@ let timerId: number | undefined;
         <div className="row">
           <div className="col col-12 col-md-6">
             <div className="contact-container">
-              <ul className="social-media">
-                <li>
-                  <a href="https://www.tiktok.com/@venusdemartemusic" aria-label="TikTok">
-                    <FontAwesomeIcon icon={faTiktok} />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/venusdemartemusic/" aria-label="Instagram">
-                    <FontAwesomeIcon icon={faInstagram} />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://whatsa.me/5548991653210/?t=Olá gostaria de saber mais sobre seu trabalho" aria-label="WhatsApp">
-                    <FontAwesomeIcon icon={faWhatsapp} />
-                  </a>
-                </li>
-              </ul>
-              <form>
-                <div className="name input-container">
-                  <label htmlFor="contact-name">Nome</label>
-                  <input type="text" id="contact-name" name="contact-name" placeholder="Nome Completo" />
-                </div>
-                <div className="email input-container">
-                  <label htmlFor="contact-email">Email</label>
-                  <input type="text" id="contact-email" name="contact-email" placeholder="Seu email" />
-                </div>
-                <div className="message input-container">
-                  <label htmlFor="contact-message">Mensagem</label>
-                  <textarea id="contact-message" name="message" rows={5} cols={50} placeholder="Sua mensagem"></textarea>
-                </div>
-                <div className="submit">
-                  <button type="submit">Enviar</button>
-                </div>
-              </form>
+              <SocialMedia />
+              <ContactForm />
             </div>
           </div>
           <div className="col col-12 col-md-6">

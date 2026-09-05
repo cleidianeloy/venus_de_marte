@@ -1,12 +1,10 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import {
     useEffect,
     useMemo,
     useState,
     type CSSProperties,
 } from 'react';
-import type { SectionInfo } from '../App';
+import type { SectionInfo } from '../../App';
 
 // permite custom properties (--foo) no style do React
 type CSSVarProperties = CSSProperties & Record<`--${string}`, string>;
@@ -59,7 +57,7 @@ export default function Header({ progress, activeSection, sections }: Props) {
                     aria-expanded={isMobile ? isOpen : undefined}
                     aria-controls={isMobile ? "main-menu" : undefined}
                     aria-label={isMobile ? (isOpen ? "Fechar menu de navegação" : "Abrir menu de navegação") : undefined}>
-                    <FontAwesomeIcon icon={isOpen ? faXmark : faBars} aria-hidden="true" />
+                    <i className={`fa-solid ${isOpen ? 'fa-xmark' : 'fa-bars'}`}></i>
                 </button>
                 <ul
                     id="main-menu"

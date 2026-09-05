@@ -1,4 +1,4 @@
-import Event from "../components/Event";
+import Event from "../components/agenda/Event";
 export interface EventInterface {
     date: Date;
     description: string,

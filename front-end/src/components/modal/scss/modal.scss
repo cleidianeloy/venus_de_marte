@@ -1,0 +1,78 @@
+
+.fancybox-feedback-modal{
+    --f-html-padding: 10rem;
+    --f-html-color: white;
+    --f-html-bg: black;
+
+    --error: #bb2124;
+    --success: #22bb33;
+    --warning: #f0ad4e;
+    --info: #5bc0de;
+    border-width: 3rem;
+    border-style: solid;
+    border-color:var(--info);
+
+    .f-button.is-close-button{
+        top: 10px;
+        right: 10px;
+        border-width: 3rem;
+        border-style: solid;
+        border-color:var(--info);
+        --f-button-svg-width: 20rem;
+
+    }
+
+    &.warning{
+        border-color:var(--warning);
+        .f-button.is-close-button{
+            border-color:var(--warning);
+        }
+    }
+    &.success{
+        border-color:var(--success);
+        .f-button.is-close-button{
+            border-color:var(--success);
+        }
+    }
+    &.error{
+        border-color:var(--error);
+        .f-button.is-close-button{
+            border-color:var(--error);
+        }
+    }
+
+    .fancybox-feedback-modal-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 20rem auto;
+        max-width: 80vw;
+        width: max(40vw, 500px);
+    }
+    .fancybox-feedback-modal-icon{
+        i{
+            font-size: 85rem;
+            margin: 10rem 0;
+            color: var(--f-html-color);
+        }
+    }
+    h1{
+        font-size: 38rem;
+        text-decoration: none;
+        font-family: Poppins, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: 0;
+        line-height: 50rem;
+        margin: 0;
+        width: fit-content;
+        margin: auto;
+    }
+    h1, p {
+        color: var(--f-html-color);
+        text-align: center;
+    }
+}

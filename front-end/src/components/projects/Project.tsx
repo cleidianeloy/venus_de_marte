@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
-
 interface Project {
     name: string;
     image: string;
@@ -36,7 +33,7 @@ export default function Project({
                 }
             </div>
             <button className="close" onClick={closeProject} aria-label='Fechar'>
-                <FontAwesomeIcon icon={faXmark} />
+                <i className='fa-solid fa-xmark'></i>
             </button>          
         </div>
     )
