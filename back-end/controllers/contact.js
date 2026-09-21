@@ -33,7 +33,7 @@ contactRouter.post('/', async (request, response, next) => {
 
         const { data, error } = await resend.emails.send({
             from: `Acme <onboarding@resend.dev>`,
-            to: [`${EMAIL_TEST}`],
+            to: [`${EMAIL_TEST}`, 'venusdemartemusic@gmail.com'],
             replyTo: email,
             subject: `${name} - Contato do site - ${email}`,
             text: message,
